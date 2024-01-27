@@ -1,0 +1,5 @@
+Using UART 
+UART is Asyschrours so no need of slave address 
+Here, I am sending data via uart and reading values from virtual terminal 
+when we gives 1 in terminal than led will trun ON and giving 2 means led will turn OFF
+This 1,2 values reading from the terminal via UART protocol.
