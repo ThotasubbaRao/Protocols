@@ -1,0 +1,6 @@
+Here, I am readint values from Accelerometer sensor (MPU 9250/6500) and it is 9-axis sensor with STM32f072rb
+when we reading values steps to be follow 
+1) we need wake-up sensor and sets memory resistors( Power Mangement 1, Acceleormeter) to 0x00 and this address avaliable in Datasheet.
+2) And also be careful about device  Address -->(0x68 << 1) + 1  ,  plus 1 is for Read and 0 is for write. 
+why because this address as 7 - bits or 10-bits and combine with Read/write bit.(we also done mistake here).
+3) And here eight eight bits convert into 16- bits using bitwise operators. 
